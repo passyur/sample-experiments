@@ -1,0 +1,52 @@
+# 2x2 design: Evidence (weak/strong) x Stakes (low/high)
+# Based on: "A puzzle about knowledge ascriptions" (Brian Porter et al. 2024)
+#
+# Variant A: Weak evidence  + Low stakes
+# Variant B: Weak evidence  + High stakes
+# Variant C: Strong evidence + Low stakes
+# Variant D: Strong evidence + High stakes
+name: "Dam Security"
+
+variants:
+  A:
+    title: "Building a Dam"
+    text: |
+      Alex's kids want to go swimming in a local river. The water has slightly risen due to several days of light rain. So he decides to build a dam. He stacks a number of logs in the river to hold the water back and create a shallow pool where his kids can swim. Once he has finished building the dam, he checks the logs once to make sure the dam is secure.
+
+      It is not at all important that the dam is secure. Due to the low water level, if it breaks, the water won't even rise to knee level.
+
+  B:
+    title: "Building a Dam"
+    text: |
+      Alex's kids want to go swimming in a local river. The water has slightly risen due to several days of light rain. So he decides to build a dam. He stacks a number of logs in the river to hold the water back and create a shallow pool where his kids can swim. Once he has finished building the dam, he checks the logs once to make sure the dam is secure.
+
+      It is very important that the dam is secure. Due to the high water level, if it breaks, his kids will be swept away by the water.
+
+  C:
+    title: "Building a Dam"
+    text: |
+      Alex's kids want to go swimming in a local river. The water has slightly risen due to several days of light rain. So he decides to build a dam. He stacks a number of logs in the river to hold the water back and create a shallow pool where his kids can swim. Once he has finished building the dam, he checks the logs several times to make sure the dam is secure.
+
+      It is not at all important that the dam is secure. Due to the low water level, if it breaks, the water won't even rise to knee level.
+
+  D:
+    title: "Building a Dam"
+    text: |
+      Alex's kids want to go swimming in a local river. The water has slightly risen due to several days of light rain. So he decides to build a dam. He stacks a number of logs in the river to hold the water back and create a shallow pool where his kids can swim. Once he has finished building the dam, he checks the logs several times to make sure the dam is secure.
+
+      It is very important that the dam is secure. Due to the high water level, if it breaks, his kids will be swept away by the water.
+
+questions:
+  - id: comprehension
+    text: "It is very important that the dam is secure."
+    answer_type: choice
+    answer_options: ["Yes", "No"]
+
+  - id: evidence_fixed
+    text: "Alex _ that the dam is secure."
+    answer_type: choice
+    answer_options: ["knows", "only thinks he knows"]
+
+  - id: evidence_seeking
+    text: "How many times do you think Alex has to check the logs before he knows that the dam is secure?"
+    answer_type: freetext
