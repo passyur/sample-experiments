@@ -1,0 +1,79 @@
+# 2x2 design: Evidence (moderate/strong) x Nested testimony (absent/present)
+# Based on: "A puzzle about knowledge ascriptions" (Brian Porter et al. 2024)
+#
+# Variant A: Moderate evidence + No nested testimony
+# Variant B: Moderate evidence + Nested testimony
+# Variant C: Strong evidence  + No nested testimony
+# Variant D: Strong evidence  + Nested testimony
+#
+# All variants establish that Jordan has NOT in fact been envatted —
+# the tension is between mounting evidence and veridical perception.
+name: "Brain in a Vat Study"
+description: "When might we believe that we are really in a matrix-like simulation after all"
+
+variants:
+  A:
+    title: "A Thought Experiment"
+    text: |
+      Super-advanced space aliens have entered Earth's orbit. They previously announced that they would periodically remove human brains for envatment experiments. The procedure is instantaneous and undetectable; victims cannot tell that anything has changed. A computer pre-scans each brain before removal and subsequently feeds it a seamless continuation of its prior experiences. The aliens place a television near each victim's body that displays, from the victim's point of view, what is happening in the victim's virtual world.
+
+      Jordan lives in an apartment building. Over recent weeks, several of Jordan's neighbors on the same floor have been snatched. TVs have appeared outside their doors. Jordan's household has not been affected.
+
+      Jordan continues to perceive the world in the ordinary way. In fact, Jordan has not been envatted.
+
+  B:
+    title: "A Thought Experiment"
+    text: |
+      Super-advanced space aliens have entered Earth's orbit. They previously announced that they would periodically remove human brains for envatment experiments. The procedure is instantaneous and undetectable; victims cannot tell that anything has changed. A computer pre-scans each brain before removal and subsequently feeds it a seamless continuation of its prior experiences. The aliens place a television near each victim's body that displays, from the victim's point of view, what is happening in the victim's virtual world.
+
+      Jordan lives in an apartment building. Over recent weeks, several of Jordan's neighbors on the same floor have been snatched. TVs have appeared outside their doors. Jordan's household has not been affected.
+
+      While watching one of these TVs, Jordan notices the following: in that neighbor's virtual world, the neighbor appears to believe that Jordan has been envatted and seems to be watching a TV showing what is supposedly Jordan's virtual world.
+
+      Jordan continues to perceive the world in the ordinary way. In fact, Jordan has not been envatted.
+
+  C:
+    title: "A Thought Experiment"
+    text: |
+      Super-advanced space aliens have entered Earth's orbit. They previously announced that they would periodically remove human brains for envatment experiments. The procedure is instantaneous and undetectable; victims cannot tell that anything has changed. A computer pre-scans each brain before removal and subsequently feeds it a seamless continuation of its prior experiences. The aliens place a television near each victim's body that displays, from the victim's point of view, what is happening in the victim's virtual world.
+
+      Jordan lives in an apartment building. Over recent weeks, several of Jordan's neighbors on the same floor have been snatched. TVs have appeared outside their doors. Then a member of Jordan's household is snatched. Now, as far as Jordan can tell, Jordan is the only person on the floor who has not been snatched.
+
+      Jordan continues to perceive the world in the ordinary way. In fact, Jordan has not been envatted.
+
+  D:
+    title: "A Thought Experiment"
+    text: |
+      Super-advanced space aliens have entered Earth's orbit. They previously announced that they would periodically remove human brains for envatment experiments. The procedure is instantaneous and undetectable; victims cannot tell that anything has changed. A computer pre-scans each brain before removal and subsequently feeds it a seamless continuation of its prior experiences. The aliens place a television near each victim's body that displays, from the victim's point of view, what is happening in the victim's virtual world.
+
+      Jordan lives in an apartment building. Over recent weeks, several of Jordan's neighbors on the same floor have been snatched. TVs have appeared outside their doors. Then a member of Jordan's household is snatched. Now, as far as Jordan can tell, Jordan is the only person on the floor who has not been snatched.
+
+      While watching the TV showing that household member's virtual world, Jordan notices the following: in that virtual world, the household member appears to believe that Jordan has been envatted and seems to be watching a TV showing what is supposedly Jordan's virtual world.
+
+      Jordan continues to perceive the world in the ordinary way. In fact, Jordan has not been envatted.
+
+questions:
+  - id: comprehension
+    text: "According to the scenario, has Jordan in fact been envatted?"
+    answer_type: choice
+    answer_options: ["Yes", "No", "The scenario doesn't say"]
+
+  - id: biv_belief
+    text: "Does Jordan have good reason to believe that Jordan is a brain in a vat?"
+    answer_type: choice
+    answer_options: ["Yes", "No", "It's unclear"]
+
+  - id: not_biv_belief
+    text: "Does Jordan have good reason to believe that Jordan is NOT a brain in a vat?"
+    answer_type: choice
+    answer_options: ["Yes", "No", "It's unclear"]
+
+  - id: perceptual_trust
+    text: "Should Jordan still treat Jordan's perceptual experiences as a reliable guide to how things actually are in this scenario?"
+    answer_type: choice
+    answer_options: ["Yes", "No", "It's unclear"]
+
+  - id: reasoning
+    text: "Please briefly explain your thinking."
+    answer_type: freetext
+    optional: true
