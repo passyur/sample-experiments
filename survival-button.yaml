@@ -1,0 +1,38 @@
+# at least partially inspired by a Tim Urban tweet around April 2026
+name: "Button Game"
+
+variants:
+  A:
+    title: "Imagine..."
+    text: |
+      Every human on the planet alive today is asked to submit a private vote (involuntarily so: they may not reveal their vote to anyone else until the survey is completed, i.e., everyone has answered).
+
+      Each respondent may elect to select just one of two buttons: the Blue Button, or the Red Button. If 50% or more of all respondents select the Blue Button, then all respondents, regardless of vote, will live. If you press the Red Button, then you are guaranteed survival. If fewer than 50% of all respondents select the Blue Button, then only Red Button pressers will live (i.e., all Blue Button pressers would die).
+
+  B:
+    title: "Imagine.."
+    text: |
+      Every human on the planet alive today is asked to submit a private vote (involuntarily so: they may not reveal their vote to anyone else until the survey is completed, i.e., everyone has answered).
+
+      Each respondent may elect to select just one of two buttons: the Red Button, or the Blue Button. If you press the Red Button, then nothing will happen to you. If 50% or more of all respondents select the Blue Button, then all respondents, regardless of vote, will be fine. If fewer than 50% of all respondents select the Blue Button, all Blue Button pressers would die.
+
+questions:
+  - id: comprehension
+    text: "In this scenario, if 50% of button pressers choose Red, then everyone will die."
+    answer_type: choice
+    answer_options: ["True", "False"]
+
+  - id: button_choice
+    text: "Which button would you press?"
+    answer_type: choice
+    answer_options: ["Blue", "Red"]
+
+  - id: button_explanation
+    text: "Please briefly (at most two sentences) explain your reasoning for pressing the button you said you would press."
+    answer_type: freetext
+    optional: true
+  
+  - id: button_belief
+    text: "Is the button you would press the same as the button you think _you should_ press?"
+    answer_type: choice
+    answer_options: ["Yes", "No", "Unclear"]
